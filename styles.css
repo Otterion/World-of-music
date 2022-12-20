@@ -327,6 +327,7 @@ footer h3::after {
     .button2:hover::after {
         width: 100%;
     }
+    
 }
 
 
@@ -352,6 +353,9 @@ footer h3::after {
 }
 
 @media (max-width: 768px) {
+    .logo{
+        z-index: 4;
+    }
 
     .burger,
     .burger::after,
@@ -377,6 +381,8 @@ footer h3::after {
     .burger-label {
         display: flex;
         cursor: pointer;
+        position: relative;
+        z-index: 4;
     }
 
     #checkbox:checked~nav {
@@ -398,17 +404,12 @@ footer h3::after {
     #checkbox:checked~label>span {
         height: 0;
     }
-    header{
-        position: fixed;
-        top: 0;
-        right: 0;
-        left: 0;
-    }
 
     .nav {
         visibility: hidden;
         position: fixed;
-        top: 50px;
+        padding-top: 50px;
+        top: 0;
         right: 0;
         left: 0;
         width: 100vw;
