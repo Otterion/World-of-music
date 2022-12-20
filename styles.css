@@ -404,7 +404,16 @@ footer h3::after {
     #checkbox:checked~label>span {
         height: 0;
     }
-
+    #checkbox:checked~label{
+        position: fixed;
+        top: 22px;
+        right: 0;
+    }
+    #checkbox:checked~.logo{
+        position: fixed;
+        top: 4px;
+        left: 0;
+    }
     .nav {
         visibility: hidden;
         position: fixed;
@@ -413,7 +422,7 @@ footer h3::after {
         right: 0;
         left: 0;
         width: 100vw;
-        height: 100%;
+        height: 100vh;
         background-color: #212121;
         z-index: 3;
     }
