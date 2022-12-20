@@ -48,6 +48,7 @@ body{
 }
 
 header {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -56,6 +57,7 @@ header {
     border-bottom: 4px ridge #E8A236;
     color: #E8A236;
     grid-area: header;
+    z-index: 100;
 }
 
 .sidebar {
@@ -396,11 +398,17 @@ footer h3::after {
     #checkbox:checked~label>span {
         height: 0;
     }
+    header{
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+    }
 
     .nav {
         visibility: hidden;
         position: fixed;
-        top: 54px;
+        top: 50px;
         right: 0;
         left: 0;
         width: 100vw;
