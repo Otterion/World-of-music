@@ -33,6 +33,9 @@ h2.section{
     text-align: center;
     border-bottom: #E8A236 2px solid;
 }
+section{
+    border-bottom: #E8A236 2px solid;
+}
 
 body{
 
